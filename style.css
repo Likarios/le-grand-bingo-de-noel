@@ -34,11 +34,9 @@ body {
 }
 
 .title > p {
-	font-size: 50px;
 	font-weight: bold;
 	text-align: center;
-	margin: 20px;
-	padding: 20px;
+	padding: 0;
 }
 
 .bingo {
@@ -78,7 +76,7 @@ body {
 	pointer-events: none;
 }
 
-.bingo > div div:nth-child(1) {
+.bingo > div > div:nth-child(4) {
 	background-color: #800f00;
 }
 
@@ -87,14 +85,58 @@ body {
 }
 
 .bingo > div p {
-	margin: 5px;
 	padding: 0;
 	text-align: center;
-	font-size: 20px;
 	font-weight: bold;
 	color: black;
 	z-index: 1;
 	pointer-events: none;
+}
+
+@media (min-width: 800px) {
+	.title > p {
+		font-size: 4em;
+		margin: 50px;
+	}
+
+	.bingo > div p {
+		margin: 0 30px 0 30px;
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+	.title > p {
+		font-size: 2em;
+		margin: 20px;
+	}
+
+	.bingo > div p {
+		margin: 0 10px 0 10px;
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+	.title > p {
+		font-size: 1em;
+		margin: 10px;
+	}
+
+	.bingo > div p {
+		margin: 0 5px 0 5px;
+		font-size: 0.5em;
+	}
+}
+
+@media (max-width: 300px) {
+	.title > p {
+		display: none;
+	}
+
+	.bingo > div p {
+		display: none;
+	}
 }
 
 @keyframes background {
