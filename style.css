@@ -49,10 +49,6 @@ body {
 
 .bingo > div {
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin: 1vw;
 	padding: 0;
 	width: 22vw;
@@ -60,7 +56,7 @@ body {
 	background-color: #fff7b1;
 }
 
-.bingo input[type=checkbox]  {
+.bingo input[type=checkbox] {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -71,17 +67,13 @@ body {
 
 .bingo > div div {
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
-}
-
-.bingo > div > div:nth-child(4) {
-	background-color: #800f00;
-}
-
-.bingo input[type="checkbox"]:checked + div {
-	background: rgba(255, 255, 255, 0.5);
 }
 
 .bingo > div p {
@@ -93,6 +85,10 @@ body {
 	pointer-events: none;
 }
 
+.bingo input[type="checkbox"]:checked + div {
+	background: rgba(255, 255, 255, 0.5);
+}
+
 @media (min-width: 800px) {
 	.title > p {
 		font-size: 70px;
@@ -102,6 +98,10 @@ body {
 	.bingo > div p {
 		margin: 0 30px 0 30px;
 		font-size: 20px;
+	}
+
+	.bingo > div p:nth-of-type(2) {
+		margin-top: 40px;
 	}
 }
 
@@ -115,6 +115,10 @@ body {
 		margin: 0 10px 0 10px;
 		font-size: 15px;
 	}
+
+	.bingo > div p:nth-of-type(2) {
+		margin-top: 25px;
+	}
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
@@ -126,6 +130,10 @@ body {
 	.bingo > div p {
 		margin: 0 5px 0 5px;
 		font-size: 8px;
+	}
+
+	.bingo > div p:nth-of-type(2) {
+		margin-top: 10px;
 	}
 }
 
