@@ -39,6 +39,19 @@ body {
 	padding: 0;
 }
 
+.points {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.points > p {
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
+}
+
 .bingo {
 	display: flex;
 	flex-direction: row;
@@ -95,6 +108,11 @@ body {
 		margin: 50px 0 50px 0;
 	}
 
+	.points > p {
+		font-size: 35px;
+		margin: 0 0 25px 0;
+	}
+
 	.bingo > div p {
 		margin: 0 30px 0 30px;
 		font-size: 20px;
@@ -109,6 +127,11 @@ body {
 	.title > p {
 		font-size: 45px;
 		margin: 20px 0 20px 0;
+	}
+
+	.points > p {
+		font-size: 20px;
+		margin: 0 0 10px 0;
 	}
 
 	.bingo > div p {
@@ -127,8 +150,13 @@ body {
 		margin: 10px 0 10px 0;
 	}
 
+	.points > p {
+		font-size: 10px;
+		margin: 0 0 5px 0;
+	}
+
 	.bingo > div p {
-		margin: 0 5px 0 5px;
+		margin: 0 5px 0 0;
 		font-size: 8px;
 	}
 
@@ -139,6 +167,10 @@ body {
 
 @media (max-width: 300px) {
 	.title > p {
+		display: none;
+	}
+
+	.points > p {
 		display: none;
 	}
 
