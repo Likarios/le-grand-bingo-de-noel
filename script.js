@@ -20,6 +20,7 @@ function load() {
 }
 
 function save() {
+    playSound();
     inputsById = {};
     points = 0;
     for (var i = 0; i < inputs.length; i++) {
@@ -34,4 +35,29 @@ function save() {
 
 function updatePointsSpan() {
     document.getElementById("point").innerHTML = points;
+}
+
+function playSound() {
+    var rand = getRandomInt(4);
+    var audio;
+    switch(rand) {
+        case 0:
+            audio = new Audio("sound_1.mp3");
+            break;
+        case 1:
+            audio = new Audio("sound_2.mp3");
+            break;
+        case 2:
+            audio = new Audio("sound_3.mp3");
+            break;
+        default:
+            audio = new Audio("sound_4.mp3");
+            break;
+    }
+    audio.play();
+    
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
 }
