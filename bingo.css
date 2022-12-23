@@ -33,11 +33,18 @@ body {
 	align-items: center;
 }
 
-.title > p {
+.title > a {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
 	font-family: title;
 	text-align: center;
 	text-shadow: 0 0 20px #ffecad;
 	padding: 0;
+}
+
+.title > a:visited {
+	color: inherit;
 }
 
 .points {
@@ -119,7 +126,7 @@ body {
 }
 
 @media (min-width: 800px) {
-	.title > p {
+	.title > a {
 		font-size: 90px;
 		margin: 50px 0 50px 0;
 	}
@@ -136,7 +143,7 @@ body {
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
-	.title > p {
+	.title > a {
 		font-size: 55px;
 		margin: 20px 0 20px 0;
 	}
@@ -153,7 +160,7 @@ body {
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
-	.title > p {
+	.title > a {
 		font-size: 35px;
 		margin: 10px 0 10px 0;
 	}
@@ -170,7 +177,7 @@ body {
 }
 
 @media (max-width: 300px) {
-	.title > p {
+	.title > a {
 		display: none;
 	}
 

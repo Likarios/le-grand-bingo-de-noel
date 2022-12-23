@@ -1,11 +1,12 @@
 var inputs = document.getElementsByTagName("input");
 var inputsById = {};
 var points = 0;
+var year;
 //localStorage.clear();
 load();
 
 function load() {
-    inputsById = JSON.parse(localStorage.getItem("save"));
+    inputsById = JSON.parse(localStorage.getItem("save" + year));
     points = 0;
     if(inputsById == null){
         return;
@@ -29,7 +30,7 @@ function save() {
             points += parseInt(inputs[i].dataset.points);
         }
     }
-    localStorage.setItem("save", JSON.stringify(inputsById));
+    localStorage.setItem("save" + year, JSON.stringify(inputsById));
     updatePointsSpan();
 }
 
