@@ -17,14 +17,6 @@ html {
 	animation: background 30s linear infinite;
 }
 
-[name="2021"] {
-	background: url(background_3.png), url(background_2.png), url(background_1.png), linear-gradient(0deg, rgba(29,0,62,1) 0%, rgba(0,74,106,1) 50%, rgba(85,0,117,1) 100%);
-}
-
-[name="2022"] {
-	background: url(background_3.png), url(background_2.png), url(background_1.png), linear-gradient(0deg, rgba(5,11,31,1) 0%, rgba(28,25,92,1) 50%, rgba(145,50,148,1) 100%);
-}
-
 body {
 	display: flex;
 	flex-direction: column;
