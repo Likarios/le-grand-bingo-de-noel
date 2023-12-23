@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr" style="background: url(background_3.png), url(background_2.png), url(background_1.png), linear-gradient(0deg, rgba(29,0,62,1) 0%, rgba(0,74,106,1) 50%, rgba(85,0,117,1) 100%);">
+	<head>
+		<meta charset="utf-8">
+		<title>Bingo Noël 2023</title>
+		<link href="bingo.css" type="text/css" rel="stylesheet" media="all">
+		<script type="text/javascript" src="script.js" defer></script>
+		<script>year="2021"</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	</head>
+	<body>
+		<div class="title">
+			<a href="index.html">Le Grand Bingo de Noël 2023</a>
+		</div>
+		<div class="points">
+			<p>Points : <span id="point"></span></p>
+		</div>
+		<div class="bingo">
+			<div>
+				<input type="checkbox" onclick="save()" data-points="2">
+				<div>
+					<p>"Depardieu"</p>
+					<p>2 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="3">
+				<div>
+					<p>"Loi Immigration"</p>
+					<p>3 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="3">
+				<div>
+					<p>"Nahel"</p>
+					<p>3 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="5">
+				<div>
+					<p>"Israël Palestine" !"</p>
+					<p>5 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="4">
+				<div>
+					<p>"Réforme des retraites"</p>
+					<p>4 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="2">
+				<div>
+					<p>"Terme d'ED (Décivilisation, Ensauvagement, Francocide, Ecoterroriste...)"</p>
+					<p>2 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="3">
+				<div>
+					<p>"ChatGPT/IAs génératives"</p>
+					<p>3 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="1">
+				<div>
+					<p>Un cadeau écolo (truc en bois, livre Jancovici...)</p>
+					<p>1 point</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="3">
+				<div>
+					<p>"Oppenheimer" ou "Barbie"</p>
+					<p>3 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="2">
+				<div>
+					<p>"Jeux Olympiques 2024"</p>
+					<p>2 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="1">
+				<div>
+					<p>"Blague discriminante"</p>
+					<p>1 point par minorité visée</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="2">
+				<div>
+					<p>Jugement sur la vie professionnelle ou personnelle d'une personne à table</p>
+					<p>2 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="1">
+				<div>
+					<p>Opinion sur le Changement Climatique</p>
+					<p>1 point</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="4">
+				<div>
+					<p>Un des plats est raté</p>
+					<p>4 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="3">
+				<div>
+					<p>Du champagne est renversé</p>
+					<p>3 points</p>
+				</div>
+			</div>
+			<div>
+				<input type="checkbox" onclick="save()" data-points="2">
+				<div>
+					<p>"Vegan"</p>
+					<p>2 points</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
